@@ -1,6 +1,6 @@
 class SignalServer {
   constructor(channel) {    
-    this.socket = new WebSocket("wss://localhost:3000");
+    this.socket = new WebSocket("ws://localhost:3001");
     this.socket.addEventListener("open", () => {
       this.postMessage({ type: "join-channel", channel });
     });
