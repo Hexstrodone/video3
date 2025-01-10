@@ -1,6 +1,6 @@
 const { WebSocketServer } = require("ws");
 
-var porta = 3000;
+var porta = 3001;
 const channels = {};
 const server = new WebSocketServer({ port: porta });
 server.on("listening", () => {console.log("Servidor rodando na porta "+porta+"...");});
